@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "f2112c32-df30-4f95-b349-f8173d8eaf8f",
+		"name": "Lord of the Rings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15399872"
+	},
+	"item": [
+		{
+			"name": "Buscar filme",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "zKuxQzaQK7lC1nf2vXRj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/movies/?name=Lord&user=Joao",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Lord"
+						},
+						{
+							"key": "user",
+							"value": "Joao"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscsar filme por ID parametro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "zKuxQzaQK7lC1nf2vXRj",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde56",
+					"protocol": "https",
+					"host": [
+						"the-one-api",
+						"dev"
+					],
+					"path": [
+						"v2",
+						"movie",
+						"5cd95395de30eff6ebccde56"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Histórico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/history/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"history",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
